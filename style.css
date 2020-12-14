@@ -20,14 +20,13 @@ h1 {
 }
 
 h2 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 28.64px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
     color: #38454C;
-    font-size: 96px;
-    line-height: 105.6px;
-    position: absolute;
-    top: 360px; left: 240px;
-    width: 860px;
-    height: 212px;
-    letter-spacing: 0.01em;
 }
 
 p {
@@ -53,6 +52,8 @@ hr {
 .menu {
     color: #38454C;
 }
+
+/* Menu */
 
 .menu-1 {
     position: absolute;
@@ -83,6 +84,8 @@ a:hover {
     border-bottom: 2px solid #E9B429;
 }
 
+/* Index */
+
 .corps {
     text-align: center;
     color: #38454C;
@@ -100,10 +103,168 @@ a:hover {
 
 .textsuperpos {
     position: absolute;
-    top: 210px; left: 50%;
+    top: 160px; left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 48px;
 }
+
+/* Contact */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #38454C;
+    font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #38454C;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #38454C;
+    font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: #38454C;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #38454C;
+    font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+    color: #38454C;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #38454C;
+    font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color: #38454C;
+}
+
+/* On hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+    color: white;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+    color: white;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color: white;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color: white;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+    color: white;
+    font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: white;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+    color: white;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+    color: white;
+}
+
+#form {
+    position: relative;
+    width: 500px;
+    margin: 80px auto 100px auto;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+    outline: none;
+    color: #38454C;
+    
+    border: solid 1px #38454C;
+    border-bottom: none;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+    background: #38454C;
+    color: white;
+}
+
+textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: #38454C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875em;
+    
+    border: solid 1px #38454C;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+    background: #38454C;
+    color: white;
+}
+
+#submit {
+    width: 502px;
+    
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875em;
+    color: #38454C;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 1px #38454C;
+    border-top: none;
+}
+
+#submit:hover {
+    color: white;
+}
+
+/* Footer */
 
 footer {
     position: fixed;
