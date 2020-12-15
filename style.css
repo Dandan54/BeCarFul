@@ -29,17 +29,6 @@ h2 {
     color: #38454C;
 }
 
-p {
-    color: #38454C;
-    font-size: 28px;
-    line-height: 42px;
-    position: absolute;
-    top: 604px; left: 240px;
-    width: 860px;
-    height: 84px;
-    opacity: 0.8;
-}
-
 hr {
     width: 70%;
     border: none;
@@ -69,7 +58,7 @@ li {
     display: inline-block;
 }
 
-a {
+.boutonmenu {
     display: block;
     width: 110px;
     padding: 5px 0;
@@ -109,79 +98,81 @@ a:hover {
 
 /* Contact */
 
+
+
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+.topBefore input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #38454C;
     font-size: 0.875em;
 }
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+.topBefore input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
     color: #38454C;
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
-    color: #38454C;
-    font-size: 0.875em;
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-    color: #38454C;
-}
-
-input::placeholder, textarea::placeholder {
+.topBefore input::-moz-placeholder, textarea::-moz-placeholder {
     color: #38454C;
     font-size: 0.875em;
 }
 
-input:focus::placeholder, textarea::focus:placeholder {
+.topBefore input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
     color: #38454C;
 }
 
-input::-ms-placeholder, textarea::-ms-placeholder {
+.topBefore input::placeholder, textarea::placeholder {
     color: #38454C;
     font-size: 0.875em;
 }
 
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+.topBefore input:focus::placeholder, textarea::focus:placeholder {
+    color: #38454C;
+}
+
+.topBefore input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #38454C;
+    font-size: 0.875em;
+}
+
+.topBefore input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
     color: #38454C;
 }
 
 /* On hover placeholder */
 
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+.topBefore input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
     color: white;
     font-size: 0.875em;
 }
 
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+.topBefore input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
     color: white;
 }
 
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-    color: white;
-    font-size: 0.875em;
-}
-
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-    color: white;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
+.topBefore input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
     color: white;
     font-size: 0.875em;
 }
 
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+.topBefore input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
     color: white;
 }
 
-input:hover::placeholder, textarea:hover::placeholder {
+.topBefore input:hover::placeholder, textarea:hover::placeholder {
     color: white;
     font-size: 0.875em;
 }
 
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+.topBefore input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: white;
+}
+
+.topBefore input:hover::placeholder, textarea:hover::placeholder {
+    color: white;
+    font-size: 0.875em;
+}
+
+.topBefore input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     color: white;
 }
 
@@ -191,7 +182,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     margin: 80px auto 100px auto;
 }
 
-input {
+.topBefore input {
     font-family: 'Roboto', sans-serif;
     font-size: 0.875em;
     width: 470px;
@@ -264,6 +255,7 @@ textarea:hover {
     color: white;
 }
 
+
 /* Footer */
 
 footer {
@@ -275,4 +267,60 @@ footer {
     background-color: white;
     color: #38454C;
     text-align: center;
+}
+
+/* Offres */
+
+.content {
+	top:40px;
+	padding-bottom:80px;
+	position:relative;
+}
+
+.formules {	
+	border-collapse: separate;
+	border-spacing: 10px;
+	position:relative;
+	margin:auto;
+}
+
+.formules h3 {
+	text-align:center;
+	color: #E9B429;
+}
+
+.formules h4 {
+	text-align:center;
+}
+
+.formules td {
+	border : 3px solid black;
+	width : 300px;
+	height : 350px;
+	background-color: #F0EEEE;
+	border-radius: 15px;
+}
+
+.boutonpermis1 {
+	display:block;
+	margin:auto;
+	position:relative;
+	margin-top:20px;
+	margin-bottom:20px;
+	border : 3px solid black;
+	border-radius: 15px;
+	width:280px;
+	height:40px;
+	background-color: #F0EEEE;
+}
+
+.boutonoffre {
+	display:block;
+	margin:auto;
+	position:relative;
+	border : 3px solid black;
+	border-radius: 15px;
+	width:100px;
+	height:40px;
+	background-color: #F0EEEE;
 }
