@@ -46,12 +46,12 @@ hr {
 
 .menu-1 {
     position: absolute;
-    top: 30px; left: 300px;
+    top: 30px; left: 500px;
 }
 
 .menu-2 {
     position: absolute;
-    top: 30px; right: 300px;
+    top: 30px; right: 500px;
 }
 
 li {
@@ -109,7 +109,7 @@ a.button1:hover {
 
 .corps img {
     display: block;
-    margin-top: 90px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
