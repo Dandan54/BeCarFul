@@ -21,5 +21,11 @@
             return $lesClasses;
         }
 
+            /********** Verif connexion **********/
+
+    public function verifConnexion ($email,$mdp){
+        return $this->unModele->verifConnexion($email,$mdp);
+    }
+
     }//fin de la classe
 ?>

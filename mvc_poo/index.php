@@ -42,6 +42,29 @@
     <hr>
 
     <?php
+     if ( ! isset($_SESSION['email'])) //pas de connexion
+                {
+            require_once("index.php");
+                }
+
+            /*if (isset($_POST['inscrire']))
+            {
+                require_once("gestionInscription.php");
+            }*/
+
+            if (isset($_POST['seconnecter']))
+            {
+                $unUser = $unControleur->verifConnexion ($_POST['email'], $_POST['mdp']);
+                if ($unUser != null)
+                {
+                    $_SESSION['email'] = $unUser["email"];
+                    $_SESSION['mdp'] = $unUser['mdp'];
+                    header("Location: index2.php"); //recharge la page sur l'index.
+                } else {
+                    echo '<br>Identifiant ou mot de passe incorrect';
+                } 
+            }
+            
         if (isset($_GET['page'])) $page = $_GET['page'];
         else $page = 0;
         //ou $page = (isset($_GET['page']))? $_GET['page'] : 0;

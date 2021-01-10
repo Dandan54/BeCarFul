@@ -46,12 +46,12 @@ hr {
 
 .menu-1 {
     position: absolute;
-    top: 30px; left: 500px;
+    top: 30px; left: 22%;
 }
 
 .menu-2 {
     position: absolute;
-    top: 30px; right: 500px;
+    top: 30px; right: 22%;
 }
 
 li {
@@ -406,7 +406,7 @@ footer {
 }
   
 .login-help {
-    margin: 20px 0;
+    margin-bottom: 100px;
     font-size: 0.875em;
     color: #38454C;
     text-align: center;
@@ -421,7 +421,7 @@ footer {
     text-decoration: none;
 }
   
-:-moz-placeholder {
+::-moz-placeholder {
     color: #38454C !important;
     font-size: 0.875em;
 }
@@ -474,4 +474,12 @@ footer {
   
 .lt-ie9 input[type=text], .lt-ie9 input[type=password] {
     line-height: 34px;
+}
+
+/* Profil */
+
+.profil h2 {
+    text-align:center;
+    margin-top:50px;
+    font-size:150%;
 }

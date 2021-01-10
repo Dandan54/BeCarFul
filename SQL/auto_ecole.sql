@@ -107,5 +107,7 @@ INSERT INTO moniteur VALUES
     ();
 
 INSERT INTO user VALUES
-    (null, "Ben", "Oka", "a@gmail.com", "12345", "admin"),
-    (null, "Sacha", "Shana", "b@gmail.com", "12345", "user");
+    (null, "Ben", "Oka", "a@gmail.com", "12345", "user"),
+    (null, "Guelin", "Michel", "gm@gmail.com", "12345", "admin"),
+    (null, "Doreau", "Daniel", "dd@gmail.com", "12345", "admin"),
+    (null, "admin", "admin", "admin@gmail.com", "12345", "admin");

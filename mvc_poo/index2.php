@@ -23,18 +23,18 @@
 
         <ul class="menu-1">
             <li>
-                <a class="boutonmenu" href="index.php?page=0">Accueil</a>
+                <a class="boutonmenu" href="index2.php?page=0">Accueil</a>
             </li>
             <li>
-                <a class="boutonmenu" href="index.php?page=1">Offres</a>
+                <a class="boutonmenu" href="index2.php?page=1">Offres</a>
             </li>
         </ul>
         <ul class="menu-2">
             <li>
-                <a class="boutonmenu" href="index.php?page=2">Contact</a>
+                <a class="boutonmenu" href="index2.php?page=2">Contact</a>
             </li>
             <li>
-                <a class="button1" href="index.php?page=3">Connexion</a>
+                <a class="button1" href="index2.php?page=3">Mon profil</a>
             </li>
         </ul>
     </div>
@@ -42,29 +42,6 @@
     <hr>
 
     <?php
-     if ( ! isset($_SESSION['email'])) //pas de connexion
-                {
-            require_once("index.php");
-                }
-
-            /*if (isset($_POST['inscrire']))
-            {
-                require_once("gestionInscription.php");
-            }*/
-
-            if (isset($_POST['seconnecter']))
-            {
-                $unUser = $unControleur->verifConnexion ($_POST['email'], $_POST['mdp']);
-                if ($unUser != null)
-                {
-                    $_SESSION['email'] = $unUser["email"];
-                    $_SESSION['mdp'] = $unUser['mdp'];
-                    header("Location: index2.php"); //recharge la page sur l'index.
-                } else {
-                    echo '<br>Identifiant ou mot de passe incorrect';
-                } 
-            }
-            
         if (isset($_GET['page'])) $page = $_GET['page'];
         else $page = 0;
         //ou $page = (isset($_GET['page']))? $_GET['page'] : 0;
@@ -73,7 +50,7 @@
             case 0 : require_once("home.php"); break;
             case 1 : require_once("offres.php"); break;
             case 2 : require_once("contact.php"); break;
-            case 3 : require_once("login.php"); break;
+            case 3 : require_once("profil.php"); break;
             //case 5 : session_destroy();
                     //header("Location")
         }
