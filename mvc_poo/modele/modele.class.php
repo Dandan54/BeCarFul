@@ -97,6 +97,26 @@
             }; // fin du if (!isset($_POST['envoi']))
         }
 
+        /********** Moniteur **********/
+
+        public function selectAllMoniteur () {
+            if ($this->unPdo != null) {
+                $requete = "select nomMoniteur, prenomMoniteur, tel, mail from moniteur;";
+    
+                //preparation de la requete
+                $select = $this->unPdo-> prepare($requete);
+    
+                //execution de la requete
+                $select->execute();
+    
+                //extraction des données
+                $lesMoniteurs = $select->fetchAll();
+                return $lesMoniteurs;
+            }else{
+                return null;
+            }
+        }
+
         /********** Connexion **********/
 
         public function verifConnexion($email, $mdp){

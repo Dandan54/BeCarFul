@@ -21,11 +21,23 @@
             return $lesClasses;
         }
 
-            /********** Verif connexion **********/
+        /********** Moniteur **********/
 
-    public function verifConnexion ($email,$mdp){
+        public function selectAllMoniteur (){
+            //appel de la fonction du modele
+            $lesMoniteurs = $this->unModele->selectAllMoniteur ();
+
+            //on réalise des traitements
+
+            //on retourne les classes
+            return $lesMoniteurs;
+        }
+
+        /********** Verif connexion **********/
+
+        public function verifConnexion ($email,$mdp){
         return $this->unModele->verifConnexion($email,$mdp);
-    }
+        }
 
     }//fin de la classe
 ?>
