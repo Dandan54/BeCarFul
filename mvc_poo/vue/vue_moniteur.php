@@ -1,6 +1,9 @@
 <center>
     <br>
-    <p>Liste des moniteurs de l'auto-école BeCarFul</p>
+    <br>
+    <hr>
+    <br>
+    <p>Liste des moniteurs</p>
     <br>
     <table border="1">
         <tr>

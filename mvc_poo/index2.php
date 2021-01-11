@@ -51,8 +51,8 @@
             case 1 : require_once("offres.php"); break;
             case 2 : require_once("contact.php"); break;
             case 3 : require_once("profil.php"); break;
-            case 4 : session_destroy();
-                    header("Location")
+            // case 4 : session_destroy();
+                    //header("Location")
         }
     ?>
 

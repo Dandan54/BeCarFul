@@ -1,0 +1,63 @@
+.wrapper {
+	display: grid;
+	grid-template-columns:repeat(5, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: 100px;
+	grid-template-areas: 
+	". a a a ."
+	". b b b ."
+	". fa fb fc ."
+	". f f f .";
+}
+
+.content {
+	grid-area: b;
+	align-self:center;
+	justify-self:center;
+	background:red;
+	text-align:center;
+	border:1px solid;
+	padding-bottom:auto;
+}
+
+.formule1 {
+	grid-area:fa;
+	align-self:center;
+	justify-self:center;
+	background:grey;
+	text-align:center;
+	border:1px solid;
+	margin-top:auto;
+}
+
+.formule2 {
+	grid-area:fb;
+	align-self:center;
+	justify-self:center;
+	background:blue;
+	text-align:center;
+	border:1px solid;
+	margin-top:auto;
+}
+
+.formule3 {
+	grid-area:fc;
+	align-self:center;
+	justify-self:center;
+	background:#45474C;
+	text-align:center;
+	color:White;
+	font-family:impact, fantasy;
+	border:1px solid;
+	margin-top:auto;
+}
+
+.footer {
+	bottom:0;
+	left:0;
+	right:0;
+	position:absolute;
+	background:yellow;
+	text-align:center;
+	border:1px solid;
+}
