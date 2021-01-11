@@ -14,23 +14,6 @@
             }
         }
 
-        /********** Connexion **********/
-
-        public function verifConnexion($email, $mdp){
-            if ($this->unPdo != null){
-                $requete = "select * from user where email = :email and mdp = :mdp; ";
-            
-                $donnees =array (":email"=>$email, ":mdp"=>$mdp) ;
-            
-                $select = $this->unPdo->prepare($requete);
-                $select->execute ($donnees);
-            
-                return $select->fetch(); //retourner un seul résultat
-            } else {
-            return null;
-            }
-        }
-
         /********** Contact **********/
 
         public function envoiFormulaire () {
@@ -134,45 +117,21 @@
             }
         }
 
-        /********** Eleve **********/
+        /********** Connexion **********/
 
-        public function selectUnEleve () {
-            if ($this->unPdo != null) {
-                $requete = "select prenomEleve, nomEleve, tel, mail, adresse, cp, ville, d_naissance from eleve;";
-    
-                //preparation de la requete
-                $select = $this->unPdo-> prepare($requete);
-    
-                //execution de la requete
-                $select->execute();
-    
-                //extraction des données
-                $leEleve = $select->fetchAll();
-                return $leEleve;
-            }else{
-                return null;
+        public function verifConnexion($email, $mdp){
+            if ($this->unPdo != null){
+                $requete = "select * from user where email = :email and mdp = :mdp; ";
+            
+                $donnees =array (":email"=>$email, ":mdp"=>$mdp) ;
+            
+                $select = $this->unPdo->prepare($requete);
+                $select->execute ($donnees);
+            
+                return $select->fetch(); //retourner un seul résultat
+            } else {
+            return null;
             }
         }
-
-        /********** Formule **********/
-
-        public function selectUneFormule () {
-            if ($this->unPdo != null) {
-                $requete = "select libelle, prix from formule;";
-    
-                //preparation de la requete
-                $select = $this->unPdo-> prepare($requete);
-    
-                //execution de la requete
-                $select->execute();
-    
-                //extraction des données
-                $laFormule = $select->fetchAll();
-                return $laFormule;
-            }else{
-                return null;
-            }
-        }
-
     }//fin de la classe
 ?>

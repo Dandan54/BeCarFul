@@ -34,7 +34,7 @@
                 <a class="boutonmenu" href="index2.php?page=2">Contact</a>
             </li>
             <li>
-                <a class="button1" href="index2.php?page=3">Mon profil</a>
+                <a class="boutonmenu" href="index2.php?page=3">Mon profil</a>
             </li>
         </ul>
     </div>
@@ -51,10 +51,7 @@
             case 1 : require_once("offres.php"); break;
             case 2 : require_once("contact.php"); break;
             case 3 : require_once("profil.php"); break;
-            // case 4 : session_destroy();
-                    //header("Location")
         }
     ?>
-
 </body>
 </html>

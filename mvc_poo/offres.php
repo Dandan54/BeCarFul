@@ -9,7 +9,6 @@
             <br><br>
             <p>&nbsp;&bull; Accès Code en ligne<br><br>&nbsp;&bull; Gestion administrative<br><br>&nbsp;&bull; Cours de conduite individuel(s) : 20h<br><br>&nbsp;&bull; Accompagnement à l'épreuve pratique</p>
             <br>
-            <input class="boutonoffre" type=button onclick=window.location.href="permis20.html"; value="Choisir"/>
         </td>
         <td>
             <h3>Code + 25h de conduite</h3>
@@ -18,7 +17,6 @@
             <br><br>
             <p>&nbsp;&bull; Accès Code en ligne<br><br>&nbsp;&bull; Gestion administrative<br><br>&nbsp;&bull; Cours de conduite individuel(s) : 25h<br><br>&nbsp;&bull; Accompagnement à l'épreuve pratique</p>
             <br>
-            <input class="boutonoffre" type=button onclick=window.location.href="permis25.html"; value="Choisir"/>
         </td>
         <td>
             <h3>Code + 30h de conduite</h3>
@@ -27,7 +25,6 @@
             <br><br>
             <p>&nbsp;&bull; Accès Code en ligne<br><br>&nbsp;&bull; Gestion administrative<br><br>&nbsp;&bull; Cours de conduite individuel(s) : 30h<br><br>&nbsp;&bull; Accompagnement à l'épreuve pratique</p>
             <br>
-            <input class="boutonoffre" type=button onclick=window.location.href="permis30.html"; value="Choisir"/>
         </td>
     </table>
 
@@ -39,7 +36,6 @@
             <br><br>
             <p>&nbsp;&bull; Dès 15 ans<br><br>&nbsp;&bull; Formation pratique : 20h<br><br>&nbsp;&bull; Au moins 3000Km (1 à 3 ans)</p>
             <br><br>
-            <input class="boutonoffre" type=button onclick=window.location.href="permisacc.html"; value="Choisir"/>
         </td>
         <td>
             <h3>Conduite supervisée</h3>
@@ -48,11 +44,10 @@
             <br><br>
             <p>&nbsp;&bull; Dès 18 ans<br><br>&nbsp;&bull; Formation pratique : 20h<br><br>&nbsp;&bull; Conduite avec un accompagnateur</p>
             <br><br>
-            <input class="boutonoffre" type=button onclick=window.location.href="permissup.html"; value="Choisir"/>
         </td>
     </table>
 
-    <input class="boutonpermis1" type=button onclick=window.location.href="permis1euro.html"; value="Informations sur le permis à 1 euro"/>
+    <input class="boutonpermis1" type=button href="permis1euro.php" value="Informations sur le permis à 1 euro"/>
 </div>
 
 

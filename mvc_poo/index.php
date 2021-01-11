@@ -42,10 +42,10 @@
     <hr>
 
     <?php
-     if ( ! isset($_SESSION['email'])) //pas de connexion
-                {
-            require_once("index.php");
-                }
+        if ( ! isset($_SESSION['email'])) //pas de connexion
+            {
+                require_once("index.php");
+            }
 
             /*if (isset($_POST['inscrire']))
             {
@@ -61,7 +61,7 @@
                     $_SESSION['mdp'] = $unUser['mdp'];
                     header("Location: index2.php"); //recharge la page sur l'index.
                 } else {
-                    echo '<br>Identifiant ou mot de passe incorrect';
+                    echo '<center><br>Identifiant ou mot de passe incorrect</center>';
                 } 
             }
             
@@ -74,8 +74,6 @@
             case 1 : require_once("offres.php"); break;
             case 2 : require_once("contact.php"); break;
             case 3 : require_once("login.php"); break;
-            //case 5 : session_destroy();
-                    //header("Location")
         }
     ?>
 
