@@ -9,6 +9,12 @@
             $this->unModele = new Modele ();
         }
 
+        /********** Verif connexion **********/
+
+        public function verifConnexion ($email,$mdp){
+        return $this->unModele->verifConnexion($email,$mdp);
+        }
+
         /********** Contact **********/
 
         public function envoiFormulaire (){
@@ -33,10 +39,28 @@
             return $lesMoniteurs;
         }
 
-        /********** Verif connexion **********/
+        /********** Eleve **********/
 
-        public function verifConnexion ($email,$mdp){
-        return $this->unModele->verifConnexion($email,$mdp);
+        public function selectUnEleve (){
+            //appel de la fonction du modele
+            $leEleve = $this->unModele->selectUnEleve ();
+
+            //on réalise des traitements
+
+            //on retourne les classes
+            return $leEleve;
+        }
+
+        /********** Formule **********/
+
+        public function selectUneFormule (){
+            //appel de la fonction du modele
+            $laFormule = $this->unModele->selectUneFormule ();
+
+            //on réalise des traitements
+
+            //on retourne les classes
+            return $laFormule;
         }
 
     }//fin de la classe

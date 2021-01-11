@@ -1,5 +1,9 @@
 <center>
-    <p>Liste des moniteurs de l'auto-école BeCarFul</p>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p>Liste des moniteurs</p>
     <br>
     <table border="1">
         <tr>
@@ -8,7 +12,6 @@
         <td>Téléphone</td>
         <td>Mail</td>
         </tr>
-
     <?php
         foreach ($lesMoniteurs as $unMoniteur) {
             echo "<tr>
@@ -19,6 +22,5 @@
             </tr>";
         }
     ?>
-
     </table>
 </center>

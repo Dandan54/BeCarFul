@@ -47,7 +47,7 @@
         </td>
     </table>
 
-    <input class="boutonpermis1" type=button href="permis1euro.php" value="Informations sur le permis à 1 euro"/>
+    <input class="boutonpermis1" type=button onclick=window.location.href="permis1euro.html"; value="Informations sur le permis à 1 euro"/>
 </div>
 
 

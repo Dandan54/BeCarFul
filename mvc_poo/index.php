@@ -43,9 +43,9 @@
 
     <?php
         if ( ! isset($_SESSION['email'])) //pas de connexion
-            {
-                require_once("index.php");
-            }
+        {
+            require_once("index.php");
+        }
 
             /*if (isset($_POST['inscrire']))
             {

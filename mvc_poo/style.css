@@ -496,7 +496,7 @@ a.button2 {
 	transform: translateX(-50%);
     padding: 0.35em 1.2em;
     border: 0.1em solid #38454C;
-    margin: 50px 0 50px 0;
+    margin: 50px 0 0 0;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
