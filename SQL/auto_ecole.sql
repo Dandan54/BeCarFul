@@ -95,9 +95,9 @@ INSERT INTO eleve VALUES
     ();
 
 INSERT INTO moniteur VALUES
-    (null, "Jean", "Dupont", "5 rue Pierre", 37000, "Tours", "0247671649", "jd@gmail.com", '1966-01-23', '1996-01-29', 1300.00),
-    (null, "Anne", "Martin", "2 place Paul", 75015, "Paris", "0247586974", "am@gmail.com", '1971-09-05', '1999-06-04', 1250.30),
-    (null, "Marie", "Mouro", "11 impasse Jacques", 92000, "Nanterre", "0247563249", "mm@gmail.com", '1969-05-01', '2001-08-13', 1200.86);
+    (null, "Jean", "Dupont", "5 rue Pierre", 37000, "Tours", "0147671649", "jd@gmail.com", '1966-01-23', '1996-01-29', 1300.00),
+    (null, "Anne", "Martin", "2 place Paul", 75015, "Paris", "0147586974", "am@gmail.com", '1971-09-05', '1999-06-04', 1250.30),
+    (null, "Marie", "Mouro", "11 impasse Jacques", 92000, "Nanterre", "0147563249", "mm@gmail.com", '1969-05-01', '2001-08-13', 1200.86);
 
 INSERT INTO voiture VALUES
     ();
