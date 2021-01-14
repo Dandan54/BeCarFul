@@ -15,6 +15,13 @@
         return $this->unModele->verifConnexion($email,$mdp);
         }
 
+        /********** Inscription **********/
+
+        public function insertUser ($tab){
+            //controle des données avant injection
+            $this->unModele->insertUser($tab);
+        }
+
         /********** Contact **********/
 
         public function envoiFormulaire (){

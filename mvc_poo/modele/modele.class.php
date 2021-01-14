@@ -31,6 +31,19 @@
             }
         }
 
+        /********** Inscription **********/
+
+        public function insertUser($tab){
+            if ($this->unPdo != null) {
+                $requete = "insert into user values (null, :nom, :prenom, :email, :mdp, 'user'); ";
+
+                $donnees = array (":nom"=>$tab['nom'], ":prenom"=>$tab['prenom'], ":email"=>$tab['email'], ":mdp"=>$tab['mdp']);
+
+                $insert = $this->unPdo->prepare($requete);
+                $insert->execute ($donnees);
+            }
+        }
+
         /********** Contact **********/
 
         public function envoiFormulaire () {

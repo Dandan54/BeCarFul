@@ -47,23 +47,28 @@
             require_once("index.php");
         }
 
-            /*if (isset($_POST['inscrire']))
-            {
-                require_once("gestionInscription.php");
-            }*/
+        if (isset($_POST['inscrire']))
+        {
+            $userEdit = null; //aucun user au début du fichier
 
-            if (isset($_POST['seconnecter']))
             {
-                $unUser = $unControleur->verifConnexion ($_POST['email'], $_POST['mdp']);
-                if ($unUser != null)
-                {
-                    $_SESSION['email'] = $unUser["email"];
-                    $_SESSION['mdp'] = $unUser['mdp'];
-                    header("Location: index2.php"); //recharge la page sur l'index.
-                } else {
-                    echo '<center><br>Identifiant ou mot de passe incorrect</center>';
-                } 
+                $unControleur->insertUser ($_POST);
+                header("Location: index.php");
             }
+        }
+
+        if (isset($_POST['seconnecter']))
+        {
+            $unUser = $unControleur->verifConnexion ($_POST['email'], $_POST['mdp']);
+            if ($unUser != null)
+            {
+                $_SESSION['email'] = $unUser["email"];
+                $_SESSION['mdp'] = $unUser['mdp'];
+                header("Location: index2.php"); //recharge la page sur l'index.
+            } else {
+                echo '<center><br>Identifiant ou mot de passe incorrect</center>';
+            } 
+        }
             
         if (isset($_GET['page'])) $page = $_GET['page'];
         else $page = 0;
