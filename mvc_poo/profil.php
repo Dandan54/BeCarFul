@@ -5,15 +5,22 @@
 <?php
 	$leEleveEdit = null; //aucune classe au début du fichier
 
-    $leEleve = $unControleur->selectUnEleve ();
+    $leEleve = $unControleur->selectUnEleve ($_SESSION['email']);
     //on les affiche
     require_once ("vue/vue_eleve.php");
 
     $laFormuleEdit = null; //aucune classe au début du fichier
 
-    $laFormule = $unControleur->selectUneFormule ();
+    $IdFormule = $unControleur->selectIdFormuleEleve ($_SESSION['email']);
+
+    
+    $laFormule = $unControleur->selectUneFormule ($IdFormule); 
+    if ($laFormule != null){
     //on les affiche
     require_once ("vue/vue_formule.php");
+    //} else {
+       // require_once ("vue/vue_choixformule.php");
+    }
 
     $leMoniteurEdit = null; //aucune classe au début du fichier
 

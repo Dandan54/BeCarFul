@@ -48,9 +48,9 @@
 
         /********** Eleve **********/
 
-        public function selectUnEleve (){
+        public function selectUnEleve ($email){
             //appel de la fonction du modele
-            $leEleve = $this->unModele->selectUnEleve ();
+            $leEleve = $this->unModele->selectUnEleve ($email);
 
             //on réalise des traitements
 
@@ -58,11 +58,23 @@
             return $leEleve;
         }
 
+        /********** ID Formule **********/
+
+        public function selectIdFormuleEleve ($email){
+            //appel de la fonction du modele
+            $IdFormule = $this->unModele->selectIdFormuleEleve ($email);
+
+            //on réalise des traitements
+
+            //on retourne les classes
+            return $IdFormule;
+        }
+
         /********** Formule **********/
 
-        public function selectUneFormule (){
+        public function selectUneFormule ($IdFormule){
             //appel de la fonction du modele
-            $laFormule = $this->unModele->selectUneFormule ();
+            $laFormule = $this->unModele->selectUneFormule ($IdFormule);
 
             //on réalise des traitements
 

@@ -2,6 +2,16 @@ DROP DATABASE IF EXISTS auto_ecole;
 CREATE DATABASE auto_ecole;
 USE auto_ecole;
 
+CREATE TABLE user (
+    iduser int(3) not null auto_increment,
+    nom varchar(30),
+    prenom varchar(30),
+    email varchar(100),
+    mdp varchar(255),
+    droits varchar(30),
+    primary key (iduser)
+);
+
 CREATE TABLE formule (
     idformule INT(3) auto_increment,
     libelle VARCHAR(30),
@@ -20,8 +30,10 @@ CREATE TABLE eleve (
     mail VARCHAR(40),
     d_naissance DATE,
     idformule INT(3),
+    iduser INT(3),
     PRIMARY KEY (ideleve),
-    FOREIGN KEY (idformule) REFERENCES formule(idformule)
+    FOREIGN KEY (idformule) REFERENCES formule(idformule),
+    FOREIGN KEY (iduser) REFERENCES user(iduser)
 );
 CREATE TABLE moniteur (
     idmoniteur int(3) NOT NULL auto_increment,
@@ -85,15 +97,14 @@ CREATE TABLE examenCode (
     resultatExaCode VARCHAR(30),
     PRIMARY KEY (idexacode)
 );
-CREATE TABLE user (
-    iduser int(3) not null auto_increment,
-    nom varchar(30),
-    prenom varchar(30),
-    email varchar(100),
-    mdp varchar(255),
-    droits varchar(30),
-    primary key (iduser)
-);
+
+INSERT INTO user VALUES
+    (null, "Ben", "Oka", "a@gmail.com", "12345", "user"),
+    (null, "Guelin", "Michel", "gm@gmail.com", "12345", "admin"),
+    (null, "Doreau", "Daniel", "dd@gmail.com", "12345", "admin"),
+    (null, "admin", "admin", "admin@gmail.com", "12345", "admin"),
+    (null, "Jo", "John", "johnj@gmail.com", "12345", "user");
+
 
 INSERT INTO formule VALUES
     (null, "Formule 20h", "999 euros"),
@@ -103,17 +114,12 @@ INSERT INTO formule VALUES
     (null, "Conduite supervisee", "799 euros");
 
 INSERT INTO eleve VALUES 
-    (null, "John", "Jo", "5 rue Jean", 75018, "Paris", "0147671640", "johnj@gmail.com", '1990-01-15', 3),
-    (null, "Clara", "Cla", "2 place Carnot", 75015, "Paris", "0147586941", "clarac@gmail.com", '2000-09-12', 3),
-    (null, "Benoit", "Ben", "11 impasse Michel", 75012, "Paris", "0147563242", "benoitb@gmail.com", '1996-05-30', 2);
+    (null, "John", "Jo", "5 rue Jean", 75018, "Paris", "0147671640", "johnj@gmail.com", '1990-01-15', 3, 5),
+    (null, "Clara", "Cla", "2 place Carnot", 75015, "Paris", "0147586941", "clarac@gmail.com", '2000-09-12', 3, null),
+    (null, "Benoit", "Ben", "11 impasse Michel", 75012, "Paris", "0147563242", "benoitb@gmail.com", '1996-05-30', 2, null);
 
 INSERT INTO moniteur VALUES
     (null, "Bob", "Lati", "5 rue Pierre", 95100, "Argenteuil", "0147671649", "bl@gmail.com", '1966-01-23', '1996-01-29', 1300.00),
     (null, "Yves", "Plout", "2 place Paul", 75015, "Paris", "0147586974", "yp@gmail.com", '1971-09-05', '1999-06-04', 1250.30),
     (null, "Marie", "Sublard", "11 impasse Jacques", 92000, "Nanterre", "0147563249", "ms@gmail.com", '1969-05-01', '2001-08-13', 1200.86);
 
-INSERT INTO user VALUES
-    (null, "Ben", "Oka", "a@gmail.com", "12345", "user"),
-    (null, "Guelin", "Michel", "gm@gmail.com", "12345", "admin"),
-    (null, "Doreau", "Daniel", "dd@gmail.com", "12345", "admin"),
-    (null, "admin", "admin", "admin@gmail.com", "12345", "admin");

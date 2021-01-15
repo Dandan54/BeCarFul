@@ -149,9 +149,9 @@
 
         /********** Eleve **********/
 
-        public function selectUnEleve () {
+        public function selectUnEleve ($email) {
             if ($this->unPdo != null) {
-                $requete = "select prenomEleve, nomEleve, tel, mail, adresse, cp, ville, d_naissance from eleve;";
+                $requete = "select prenomEleve, nomEleve, tel, mail, adresse, cp, ville, d_naissance from eleve where eleve.mail= '".$email."'"; 
     
                 //preparation de la requete
                 $select = $this->unPdo-> prepare($requete);
@@ -167,11 +167,31 @@
             }
         }
 
+        /********** ID Formule **********/
+
+        public function selectIdFormuleEleve ($email) {
+           if ($this->unPdo != null) {
+                $requete = "select idformule from eleve where eleve.mail= '".$email."'"; 
+    
+                //preparation de la requete
+                $select = $this->unPdo-> prepare($requete);
+    
+                //execution de la requete
+                $select->execute();
+    
+                //extraction des données
+                $leIdFormule = $select->fetch();
+                return $leIdFormule['idformule'];
+            }else{
+                return null;
+            } 
+        }
+
         /********** Formule **********/
 
-        public function selectUneFormule () {
+        public function selectUneFormule ($IdFormule) {
             if ($this->unPdo != null) {
-                $requete = "select libelle, prix from formule;";
+                $requete = "select libelle, prix from formule where formule.idformule= '".$IdFormule."'"; //die($requete);
     
                 //preparation de la requete
                 $select = $this->unPdo-> prepare($requete);
