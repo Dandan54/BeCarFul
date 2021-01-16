@@ -51,6 +51,8 @@
             case 1 : require_once("offres.php"); break;
             case 2 : require_once("contact.php"); break;
             case 3 : require_once("profil.php"); break;
+            case 4 : require_once("quizz.php"); break;
+            case 5 : require_once("logout.php"); break;
         }
     ?>
 

@@ -97,6 +97,18 @@ CREATE TABLE examenCode (
     resultatExaCode VARCHAR(30),
     PRIMARY KEY (idexacode)
 );
+CREATE TABLE choix (
+    idchoix int(3) AUTO_INCREMENT,
+    numeroQuestion int(11) NOT NULL,
+    correct tinyint(4) NOT NULL DEFAULT '0',
+    reponse varchar(150),
+    PRIMARY KEY (idchoix)
+);
+CREATE TABLE question (
+    idquestion int(3) AUTO_INCREMENT,
+    question varchar(150) NOT NULL,
+    PRIMARY KEY (idquestion)
+);
 
 INSERT INTO user VALUES
     (null, "Ben", "Oka", "a@gmail.com", "12345", "user"),
@@ -123,3 +135,23 @@ INSERT INTO moniteur VALUES
     (null, "Yves", "Plout", "2 place Paul", 75015, "Paris", "0147586974", "yp@gmail.com", '1971-09-05', '1999-06-04', 1250.30),
     (null, "Marie", "Sublard", "11 impasse Jacques", 92000, "Nanterre", "0147563249", "ms@gmail.com", '1969-05-01', '2001-08-13', 1200.86);
 
+INSERT INTO choix (idchoix, numeroQuestion, correct, reponse) VALUES
+    (null, 1, 1, "Oui"),
+    (null, 1, 0, "Non"),
+    (null, 2, 0, "Avertir les secours"),
+    (null, 2, 0, "Secourir les victimes"),
+    (null, 2, 1, "Securiser et proteger les lieux"),
+    (null, 3, 0, "100 km / heure"),
+    (null, 3, 1, "110 km / heure"),
+    (null, 3, 0, "130 km / heure"),
+    (null, 4, 0, "Ma main gauche"),
+    (null, 4, 1, "Ma main droite"),
+    (null, 5, 1, "Oui"),
+    (null, 5, 0, "Non");
+
+INSERT INTO question (idquestion, question) VALUES
+    (null, "Le marquage au sol m'aide a evaluer l'espace de securite :"),
+    (null, "En arrivant sur les lieux d'un accident, je dois en premier lieu :"),
+    (null, "Etant conducteur novice, ma vitesse sur autoroute est limitee a :"),
+    (null, "Lorsque j'ouvre la portiere de ma voiture, j'utilise :"),
+    (null, "Le regulateur de vitesse permet dans certaines situations de faire des economies de carburant :");

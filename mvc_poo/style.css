@@ -25,7 +25,7 @@ h2 {
     line-height: 28.64px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 80px;
     color: #38454C;
 }
 
@@ -54,7 +54,7 @@ hr {
     top: 30px; right: 22%;
 }
 
-li {
+.menu li {
     display: inline-block;
 }
 
@@ -382,39 +382,6 @@ footer {
 
 /* Login */
 
-/* Profil */
-
-a.button2 {
-    display: inline-block;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-    padding: 0.35em 1.2em;
-    border: 0.1em solid #38454C;
-    margin: 50px 0 0 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 300;
-    color: #38454C;
-    text-align: center;
-    transition: all 0.2s;
-}
-
-a.button2:hover {
-    border: 0.1em solid #E9B429;
-}
-
-@media all and (max-width:30em) {
-    a.button2 {
-        display:block;
-        margin:0.4em auto;
-    }
-}
-
-/* Login 2 */
-
 .login-wrap {
 	width: 100%;
 	margin: auto;
@@ -576,4 +543,98 @@ a.button2:hover {
 
 .login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
 	transform: rotate(0);
+}
+
+/* Profil */
+
+a.button2 {
+    display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #38454C;
+    margin: 50px 0 0 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: #38454C;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+a.button2:hover {
+    border: 0.1em solid #E9B429;
+}
+
+@media all and (max-width:30em) {
+    a.button2 {
+        display:block;
+        margin:0.4em auto;
+    }
+}
+
+a.button3 {
+    display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #38454C;
+    margin: 20px 0 80px 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: #38454C;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+a.button3:hover {
+    border: 0.1em solid #E9B429;
+}
+
+@media all and (max-width:30em) {
+    a.button3 {
+        display:block;
+        margin:0.4em auto;
+    }
+}
+
+/* Quizz */
+
+.quizz {
+    margin-top: 80px;
+    text-align: center;
+    color: #38454C;
+}
+
+.quizz h3 {
+    text-decoration: underline;
+    text-decoration-color: #E9B429;
+}
+
+.quizz ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.questionnaire {
+    margin-top: 80px;
+    text-align: center;
+    color: #38454C;
+}
+
+.questionnaire li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 20px;
+}
+
+.question {
+    margin-top: 20px;
 }

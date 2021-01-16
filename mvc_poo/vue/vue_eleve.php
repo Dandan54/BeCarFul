@@ -3,7 +3,7 @@
     <br>
     <hr>
     <br>
-    <p>Mes informations</p>
+    <p style="text-decoration: underline; text-decoration-color: #E9B429;">Mes informations</p>
     <br>
     <table border="1">
         <tr>

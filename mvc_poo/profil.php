@@ -1,9 +1,9 @@
 <h2>Mon profil</h2>
 
-<a class="button2" href="logout.php">Déconnexion</a>
+<a class="button2" href="index2.php?page=4">Code de la route</a>
 
 <?php
-	$leEleveEdit = null; //aucune classe au début du fichier
+    $leEleveEdit = null; //aucune classe au début du fichier
 
     $leEleve = $unControleur->selectUnEleve ($_SESSION['email']);
     //on les affiche
@@ -29,7 +29,12 @@
     require_once ("vue/vue_moniteur.php");
 ?>
 
-<br><br><br><br><br><br>
+<br>
+<br>
+<hr>
+<br>
+
+<a class="button3" href="index2.php?page=5">Déconnexion</a>
 
 <footer>
     © 2020 - TOUS DROITS RÉSERVÉS

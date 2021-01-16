@@ -3,7 +3,7 @@
     <br>
     <hr>
     <br>
-    <p>Liste des moniteurs</p>
+    <p style="text-decoration: underline; text-decoration-color: #E9B429;">Liste des moniteurs</p>
     <br>
     <table border="1">
         <tr>
