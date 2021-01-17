@@ -48,7 +48,11 @@
 			<p>Félicitations ! Vous avez terminé le test</p>
 			<br>
 			<p>Score final : <?php echo $_SESSION['score']; ?></p>
-		</div>
+		</div>	
+
+		<?php
+    	$_SESSION['score'] = null;
+    	?>
 		
 		<a class="button2" href="question.php?n=1">Recommencer</a>
 

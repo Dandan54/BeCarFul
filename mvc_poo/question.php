@@ -66,7 +66,7 @@
 
 		<hr>
 
-		<h2>PHP Quizzer</h2>
+		<h2>Questionnaire</h2>
 
 		<div class="questionnaire">
 			<div class="current">
