@@ -10,7 +10,7 @@
     $total = $results->num_rows;
 ?>
 
-<h2>PHP Quizzer</h2>
+<h2>Questionnaire</h2>
 
 <div class="quizz">
     <h3>Entrainement au code de la route</h3>

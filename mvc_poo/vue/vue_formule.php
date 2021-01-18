@@ -3,7 +3,7 @@
     <br>
     <hr>
     <br>
-    <p style="text-decoration: underline; text-decoration-color: #E9B429;">Ma Formule</p>
+    <p class="profiltitre">Ma Formule</p>
     <br>
     <table border="1">
         <tr>

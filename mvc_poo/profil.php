@@ -1,7 +1,5 @@
 <h2>Mon profil</h2>
-
-<a class="button2" href="index2.php?page=4">Code de la route</a>
-
+<br>
 <?php
     $leEleveEdit = null; //aucune classe au début du fichier
 

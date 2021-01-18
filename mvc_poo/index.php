@@ -21,7 +21,7 @@
     <div class="menu">
         <h1>BeCarFul</h1>
 
-        <ul class="menu-1">
+        <ul class="menu-1-1">
             <li>
                 <a class="boutonmenu" href="index.php?page=0">Accueil</a>
             </li>
@@ -29,7 +29,7 @@
                 <a class="boutonmenu" href="index.php?page=1">Offres</a>
             </li>
         </ul>
-        <ul class="menu-2">
+        <ul class="menu-2-1">
             <li>
                 <a class="boutonmenu" href="index.php?page=2">Contact</a>
             </li>
@@ -39,7 +39,7 @@
         </ul>
     </div>
 
-    <hr>
+    <hr class="ind1">
 
     <?php
         if ( ! isset($_SESSION['email'])) //pas de connexion

@@ -21,25 +21,31 @@
     <div class="menu">
         <h1>BeCarFul</h1>
 
-        <ul class="menu-1">
+        <ul class="menu-1-2">
             <li>
                 <a class="boutonmenu" href="index2.php?page=0">Accueil</a>
             </li>
             <li>
                 <a class="boutonmenu" href="index2.php?page=1">Offres</a>
             </li>
-        </ul>
-        <ul class="menu-2">
             <li>
                 <a class="boutonmenu" href="index2.php?page=2">Contact</a>
             </li>
+        </ul>
+        <ul class="menu-2-2">
             <li>
-                <a class="boutonmenu" href="index2.php?page=3">Mon profil</a>
+                <a class="boutonmenu" href="index2.php?page=3">Profil</a>
+            </li>
+            <li>
+                <a class="boutonmenu" href="index2.php?page=4">Code</a>
+            </li>
+            <li>
+                <a class="boutonmenu" href="index2.php?page=5">Déconnexion</a>
             </li>
         </ul>
     </div>
 
-    <hr>
+    <hr class="ind2">
 
     <?php
         if (isset($_GET['page'])) $page = $_GET['page'];
