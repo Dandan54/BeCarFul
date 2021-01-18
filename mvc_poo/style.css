@@ -13,7 +13,7 @@ html body {
 h1 {
     text-align: center;
     color: #E9B429;
-    font-size: 30px;
+    font-size: 200%;   /* anciennement 30px */
     line-height: 28.64px;
     margin-top: 40px;
     margin-bottom: 30px;
@@ -30,7 +30,25 @@ h2 {
 }
 
 hr {
-    width: 50%;
+    width: 40%;
+    border: none;
+    border-top: 1px solid #38454C;
+    opacity: 0.4;
+    text-align: center;
+    margin: auto;
+}
+
+hr.ind1 {
+    width: 55%;
+    border: none;
+    border-top: 1px solid #38454C;
+    opacity: 0.4;
+    text-align: center;
+    margin: auto;
+}
+
+hr.ind2 {
+    width: 75%;
     border: none;
     border-top: 1px solid #38454C;
     opacity: 0.4;
@@ -44,14 +62,24 @@ hr {
     color: #38454C;
 }
 
-.menu-1 {
+.menu-1-1 {
     position: absolute;
-    top: 30px; left: 22%;
+    top: 30px; left: 24%;
 }
 
-.menu-2 {
+.menu-2-1 {
     position: absolute;
-    top: 30px; right: 22%;
+    top: 30px; right: 24%;
+}
+
+.menu-1-2 {
+    position: absolute;
+    top: 30px; left: 15%;
+}
+
+.menu-2-2 {
+    position: absolute;
+    top: 30px; right: 15%;
 }
 
 .menu li {
@@ -60,7 +88,7 @@ hr {
 
 .boutonmenu {
     display: block;
-    width: 110px;
+    width: 90px;
     padding: 5px 0;
     text-align: center;
     border: none;
@@ -115,16 +143,6 @@ a.button1:hover {
     width: 16px;
 }
 
-.boutonmenu {
-    display: block;
-    width: 110px;
-    padding: 5px 0;
-    text-align: center;
-    border: none;
-    color: #38454C;
-    text-decoration: none;
-    margin: 10px;
-}
 
 /* Index */
 
@@ -547,6 +565,13 @@ footer {
 
 /* Profil */
 
+p.profiltitre {
+    text-decoration: underline 2px; 
+    text-decoration-color: #E9B429;
+    font-size: 120%;
+    font-weight:bold;
+}
+
 a.button2 {
     display: inline-block;
 	position: relative;
@@ -614,8 +639,9 @@ a.button3:hover {
 }
 
 .quizz h3 {
-    text-decoration: underline;
+    text-decoration: underline 2px;
     text-decoration-color: #E9B429;
+    font-weight:bold;
 }
 
 .quizz ul {
@@ -637,4 +663,19 @@ a.button3:hover {
 
 .question {
     margin-top: 20px;
+}
+
+table.profiltable {
+    border-radius: 8px;
+    text-align: center;
+    border: 0px solid #E9B429;
+    border-spacing: 5px;
+}
+
+td {
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid #E9B429;
+    width:9em;
+    height:30px;
 }

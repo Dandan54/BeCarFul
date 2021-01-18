@@ -11,23 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="menu">
+        <div class="menu">
         <h1>BeCarFul</h1>
 
-        <ul class="menu-1">
+        <ul class="menu-1-2">
             <li>
-                <a class="boutonmenu" href="index.php?page=0">Accueil</a>
+                <a class="boutonmenu" href="index2.php?page=0">Accueil</a>
             </li>
             <li>
-                <a class="boutonmenu" href="index.php?page=1">Offres</a>
+                <a class="boutonmenu" href="index2.php?page=1">Offres</a>
+            </li>
+            <li>
+                <a class="boutonmenu" href="index2.php?page=2">Contact</a>
             </li>
         </ul>
-        <ul class="menu-2">
+        <ul class="menu-2-2">
             <li>
-                <a class="boutonmenu" href="index.php?page=2">Contact</a>
+                <a class="boutonmenu" href="index2.php?page=3">Profil</a>
             </li>
             <li>
-                <a class="button1" href="index.php?page=3">Connexion</a>
+                <a class="boutonmenu" href="index2.php?page=4">Code</a>
+            </li>
+            <li>
+                <a class="boutonmenu" href="index2.php?page=5">Déconnexion</a>
             </li>
         </ul>
     </div>

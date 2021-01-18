@@ -3,14 +3,15 @@
     <br>
     <hr>
     <br>
-    <p style="text-decoration: underline; text-decoration-color: #E9B429;">Liste des moniteurs</p>
     <br>
-    <table border="1">
+    <p class="profiltitre">Liste des moniteurs</p>
+    <br>
+    <table class="profiltable">
         <tr>
-        <td>Nom</td>
-        <td>Prenom</td>
-        <td>Téléphone</td>
-        <td>Mail</td>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Téléphone</th>
+        <th>Mail</th>
         </tr>
     <?php
         foreach ($lesMoniteurs as $unMoniteur) {

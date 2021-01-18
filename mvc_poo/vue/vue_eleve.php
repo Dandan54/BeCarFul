@@ -3,34 +3,44 @@
     <br>
     <hr>
     <br>
-    <p style="text-decoration: underline; text-decoration-color: #E9B429;">Mes informations</p>
     <br>
-    <table border="1">
+    <p class="profiltitre">Mes informations</p>
+    <br>
+    <table class="profiltable">
         <tr>
-        <td>Prénom</td>
-        <td>Nom</td>
-        <td>Téléphone</td>
-        <td>Mail</td>
-        <td>Adresse</td>
-        <td>Code Postal</td>
-        <td>Ville</td>
-        <td>Date de naissance</td>
+        <th>Prénom</th>
+        <th>Nom</th>
+        <th>Date de naissance</th>
+        <th>Téléphone</th>
+        <th>Mail</th>
         </tr>
-
     <?php
         foreach ($leEleve as $unEleve) {
             echo "<tr>
             <td>".$unEleve["prenomEleve"]."</td>
             <td>".$unEleve["nomEleve"]."</td>
+            <td>".$unEleve["d_naissance"]."</td>
             <td>".$unEleve["tel"]."</td>
             <td>".$unEleve["mail"]."</td>
-            <td>".$unEleve["adresse"]."</td>
-            <td>".$unEleve["cp"]."</td>
-            <td>".$unEleve["ville"]."</td>
-            <td>".$unEleve["d_naissance"]."</td>
             </tr>";
         }
     ?>
-
+    </table>
+    <br>
+    <table class="profiltable">
+        <tr>
+        <th>Adresse</th>
+        <th>Code Postal</th>
+        <th>Ville</th>
+        </tr>
+    <?php
+        foreach ($leEleve as $unEleve) {
+            echo "<tr>
+            <td>".$unEleve["adresse"]."</td>
+            <td>".$unEleve["cp"]."</td>
+            <td>".$unEleve["ville"]."</td>
+            </tr>";
+        }
+    ?>
     </table>
 </center> 
