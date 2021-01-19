@@ -29,18 +29,18 @@
                 <a class="boutonmenu" href="index2.php?page=1">Offres</a>
             </li>
             <li>
-                <a class="boutonmenu" href="index2.php?page=2">Contact</a>
+                <a class="boutonmenu" href="index2.php?page=4">Entraînement</a>
             </li>
         </ul>
         <ul class="menu-2-2">
             <li>
+                <a class="boutonmenu" href="index2.php?page=2">Contact</a>
+            </li>
+            <li>
                 <a class="boutonmenu" href="index2.php?page=3">Profil</a>
             </li>
             <li>
-                <a class="boutonmenu" href="index2.php?page=4">Code</a>
-            </li>
-            <li>
-                <a class="boutonmenu" href="index2.php?page=5">Déconnexion</a>
+                <a class="button1" href="index2.php?page=5">Déconnexion</a>
             </li>
         </ul>
     </div>

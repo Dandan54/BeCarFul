@@ -1,5 +1,6 @@
 <h2>Mon profil</h2>
 <br>
+
 <?php
     $leEleveEdit = null; //aucune classe au début du fichier
 
@@ -26,13 +27,6 @@
     //on les affiche
     require_once ("vue/vue_moniteur.php");
 ?>
-
-<br>
-<br>
-<hr>
-<br>
-
-<a class="button3" href="index2.php?page=5">Déconnexion</a>
 
 <footer>
     © 2020 - TOUS DROITS RÉSERVÉS

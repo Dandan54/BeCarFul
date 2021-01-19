@@ -1,9 +1,6 @@
 <center>
     <br>
     <br>
-    <hr>
-    <br>
-    <br>
     <p class="profiltitre">Mes informations</p>
     <br>
     <table class="profiltable">
@@ -17,11 +14,11 @@
     <?php
         foreach ($leEleve as $unEleve) {
             echo "<tr>
-            <td>".$unEleve["prenomEleve"]."</td>
-            <td>".$unEleve["nomEleve"]."</td>
+            <td>".$unEleve["prenom"]."</td>
+            <td>".$unEleve["nom"]."</td>
             <td>".$unEleve["d_naissance"]."</td>
             <td>".$unEleve["tel"]."</td>
-            <td>".$unEleve["mail"]."</td>
+            <td>".$unEleve["email"]."</td>
             </tr>";
         }
     ?>

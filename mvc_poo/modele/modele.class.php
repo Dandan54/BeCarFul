@@ -18,7 +18,7 @@
 
         public function verifConnexion($email, $mdp){
             if ($this->unPdo != null){
-                $requete = "select * from user where email = :email and mdp = :mdp; ";
+                $requete = "select * from eleve where email = :email and mdp = :mdp; ";
             
                 $donnees =array (":email"=>$email, ":mdp"=>$mdp) ;
             
@@ -35,9 +35,9 @@
 
         public function insertUser($tab){
             if ($this->unPdo != null) {
-                $requete = "insert into user values (null, :nom, :prenom, :email, :mdp, 'user'); ";
+                $requete = "insert into eleve values (null, :prenom, :nom, null, null, null, null, :email, null, :mdp, :formule); ";
 
-                $donnees = array (":nom"=>$tab['nom'], ":prenom"=>$tab['prenom'], ":email"=>$tab['email'], ":mdp"=>$tab['mdp']);
+                $donnees = array (":prenom"=>$tab['prenom'], ":nom"=>$tab['nom'], ":email"=>$tab['email'], ":mdp"=>$tab['mdp'], ":formule"=>$tab['formule']);
 
                 $insert = $this->unPdo->prepare($requete);
                 $insert->execute ($donnees);
@@ -151,7 +151,7 @@
 
         public function selectUnEleve ($email) {
             if ($this->unPdo != null) {
-                $requete = "select prenomEleve, nomEleve, tel, mail, adresse, cp, ville, d_naissance from eleve where eleve.mail= '".$email."'"; 
+                $requete = "select prenom, nom, tel, email, adresse, cp, ville, d_naissance from eleve where eleve.email= '".$email."'"; 
     
                 //preparation de la requete
                 $select = $this->unPdo-> prepare($requete);
@@ -171,7 +171,7 @@
 
         public function selectIdFormuleEleve ($email) {
            if ($this->unPdo != null) {
-                $requete = "select idformule from eleve where eleve.mail= '".$email."'"; 
+                $requete = "select idformule from eleve where eleve.email= '".$email."'"; 
     
                 //preparation de la requete
                 $select = $this->unPdo-> prepare($requete);

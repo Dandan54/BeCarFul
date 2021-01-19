@@ -23,10 +23,10 @@
 			<form method="post" action="">
 				<div class="sign-up-htm">
 					<div class="group">
-						<input id="user" type="text" name="nom" class="input" placeholder="NOM">
+						<input id="user" type="text" name="prenom" class="input" placeholder="PRENOM">
 					</div>
 					<div class="group">
-						<input id="user" type="text" name="prenom" class="input" placeholder="PRENOM">
+						<input id="user" type="text" name="nom" class="input" placeholder="NOM">
 					</div>
 					<div class="group">
 						<input id="user" type="text" name="email" class="input" placeholder="ADRESSE E-MAIL">
@@ -34,9 +34,16 @@
 					<div class="group">
 						<input id="pass" type="password" name="mdp" class="input" data-type="password" placeholder="MOT DE PASSE">
 					</div>
-					<!-- <div class="group">
-						<input id="pass" type="password" class="input" data-type="password" placeholder="Confirmer le mot de passe">
-					</div> -->
+					<div class="group">
+						<select name="formule" class="select" id="user">
+							<option value="">CHOISISSEZ UNE FORMULE</option>
+							<option value="1">Conduite 20h</option>
+							<option value="2">Conduite 25h</option>
+							<option value="3">Conduite 30h</option>
+							<option value="4">Consuite accompagnée</option>
+							<option value="5">Consuite supervisée</option>
+						</select>
+					</div>
 					<div class="group">
 						<input type="submit" name="inscrire" class="button" value="S'inscrire">
 					</div>

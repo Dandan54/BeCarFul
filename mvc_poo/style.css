@@ -39,7 +39,7 @@ hr {
 }
 
 hr.ind1 {
-    width: 55%;
+    width: 50%;
     border: none;
     border-top: 1px solid #38454C;
     opacity: 0.4;
@@ -48,7 +48,7 @@ hr.ind1 {
 }
 
 hr.ind2 {
-    width: 75%;
+    width: 60%;
     border: none;
     border-top: 1px solid #38454C;
     opacity: 0.4;
@@ -64,22 +64,22 @@ hr.ind2 {
 
 .menu-1-1 {
     position: absolute;
-    top: 30px; left: 24%;
+    top: 30px; left: 28%;
 }
 
 .menu-2-1 {
     position: absolute;
-    top: 30px; right: 24%;
+    top: 30px; right: 28%;
 }
 
 .menu-1-2 {
     position: absolute;
-    top: 30px; left: 15%;
+    top: 30px; left: 23%;
 }
 
 .menu-2-2 {
     position: absolute;
-    top: 30px; right: 15%;
+    top: 30px; right: 23%;
 }
 
 .menu li {
@@ -327,19 +327,6 @@ textarea:hover {
     color: white;
 }
 
-/* Footer */
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    background-color: white;
-    color: #38454C;
-    text-align: center;
-}
-
 /* Offres */
 
 .content {
@@ -351,17 +338,19 @@ footer {
 .formules {	
 	border-collapse: separate;
 	border-spacing: 10px;
-	position:relative;
-	margin:auto;
+	position: relative;
+	margin: auto auto 30px;
 }
 
 .formules h3 {
-	text-align:center;
-	color: #E9B429;
+    text-align: center;
+    /*color: #E9B429;*/
+    text-decoration: underline 2px;
+    text-decoration-color: #E9B429;
 }
 
 .formules h4 {
-	text-align:center;
+	text-align: center;
 }
 
 .formules td {
@@ -472,8 +461,16 @@ footer {
     margin: auto;
 }
 
+.login-form .group .select {
+    width: 98%;
+    color: #38454C;
+    background-color: transparent;
+    display: block;
+    margin: auto;
+}
+
 .login-form .group .button {
-	width: 90%;
+	width: 98%;
 	color: #fff;
     display: block;
     margin: auto;
@@ -484,6 +481,12 @@ footer {
 	padding: 15px 20px;
     border: solid 1px #38454C;
     cursor: text;
+}
+
+.login-form .group .select {
+    border: none;
+	padding: 15px 20px;
+    border: solid 1px #38454C;
 }
 
 .login-form .group .button {
@@ -678,4 +681,18 @@ td {
     border: 2px solid #E9B429;
     width:9em;
     height:30px;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-top:30px;
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    color: #38454C;
+    text-align: center;
 }
