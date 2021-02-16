@@ -10,9 +10,12 @@
     $total = $results->num_rows;
 ?>
 
+<<<<<<< HEAD
 <br>
 <br>
 <br>
+=======
+>>>>>>> b4214e8bfd9ac8bb7eb3537efe417a652d1bc801
 <h2>Code de la route</h2>
 
 <div class="quizz">

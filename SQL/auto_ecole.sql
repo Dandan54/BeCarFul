@@ -22,7 +22,11 @@ CREATE TABLE eleve (
     mdp varchar(100),
     idformule INT(3),
     PRIMARY KEY (ideleve),
+<<<<<<< HEAD
     FOREIGN KEY (idformule) references formule(idformule)
+=======
+    FOREIGN KEY (idformule) REFERENCES formule(idformule)
+>>>>>>> b4214e8bfd9ac8bb7eb3537efe417a652d1bc801
 );
 
 CREATE TABLE moniteur (

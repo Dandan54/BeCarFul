@@ -1,8 +1,11 @@
 <br>
+<<<<<<< HEAD
 <br>
 <br>
 <center><h2>Mon profil</h2></center>
 <br>
+=======
+>>>>>>> b4214e8bfd9ac8bb7eb3537efe417a652d1bc801
 
 <?php
     $leEleveEdit = null; //aucune classe au début du fichier

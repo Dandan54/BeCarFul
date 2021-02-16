@@ -28,17 +28,26 @@
             </li>
             <li>
                 <a class="boutonmenu" href="index2.php?page=4">Entraînement</a>
+<<<<<<< HEAD
             </li>          
             <li class="logo">
                 <p>BeCarFul</p>
             </li>
             <li class="afterlogo">
                 <a class="boutonmenu" href="index2.php?page=2">Contact</a>
+=======
+>>>>>>> b4214e8bfd9ac8bb7eb3537efe417a652d1bc801
             </li>
             <li>
+                <a class="boutonmenu" href="index2.php?page=2">Contact</a>
+            </li>
+            <li>
+<<<<<<< HEAD
+=======
                 <a class="boutonmenu" href="index2.php?page=3">Profil</a>
             </li>
             <li>
+>>>>>>> b4214e8bfd9ac8bb7eb3537efe417a652d1bc801
                 <a class="button1" href="index2.php?page=5">Déconnexion</a>
             </li>
             </ul>
