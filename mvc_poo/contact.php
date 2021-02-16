@@ -20,6 +20,9 @@ $message_erreur_formulaire = "Vous devez d'abord <a href=\"contact.html\">envoye
 $message_formulaire_invalide = "Vérifiez que tous les champs soient bien remplis et que l'email soit sans erreur.";
 ?>
 
+<br>
+<br>
+<br>
 <h2>Contactez-nous</h2>
 
     <form id="form" class="topBefore" method="post" action="">

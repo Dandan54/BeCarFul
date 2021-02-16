@@ -44,9 +44,7 @@
 	</head>
 	<body>
 		<div class="menu">
-        <h1>BeCarFul</h1>
-
-        <ul class="menu-1-2">
+            <ul>
             <li>
                 <a class="boutonmenu" href="index2.php?page=0">Accueil</a>
             </li>
@@ -54,24 +52,28 @@
                 <a class="boutonmenu" href="index2.php?page=1">Offres</a>
             </li>
             <li>
+                <a class="boutonmenu" href="index2.php?page=4">Entraînement</a>
+            </li>          
+            <li class="logo">
+                <p>BeCarFul</p>
+            </li>
+            <li class="afterlogo">
                 <a class="boutonmenu" href="index2.php?page=2">Contact</a>
             </li>
-        </ul>
-        <ul class="menu-2-2">
             <li>
                 <a class="boutonmenu" href="index2.php?page=3">Profil</a>
             </li>
             <li>
-                <a class="boutonmenu" href="index2.php?page=4">Code</a>
+                <a class="button1" href="index2.php?page=5">Déconnexion</a>
             </li>
-            <li>
-                <a class="boutonmenu" href="index2.php?page=5">Déconnexion</a>
-            </li>
-        </ul>
+            </ul>
     </div>
 
 		<hr class="ind2">
 
+		<br>
+		<br>
+		<br>
 		<h2>Questionnaire</h2>
 
 		<div class="questionnaire">

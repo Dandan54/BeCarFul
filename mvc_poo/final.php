@@ -19,10 +19,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div class="menu">
-        <h1>BeCarFul</h1>
-
-        <ul class="menu-1-2">
+	   <div class="menu">
+            <ul>
             <li>
                 <a class="boutonmenu" href="index2.php?page=0">Accueil</a>
             </li>
@@ -30,28 +28,32 @@
                 <a class="boutonmenu" href="index2.php?page=1">Offres</a>
             </li>
             <li>
+                <a class="boutonmenu" href="index2.php?page=4">Entraînement</a>
+            </li>          
+            <li class="logo">
+                <p>BeCarFul</p>
+            </li>
+            <li class="afterlogo">
                 <a class="boutonmenu" href="index2.php?page=2">Contact</a>
             </li>
-        </ul>
-        <ul class="menu-2-2">
             <li>
                 <a class="boutonmenu" href="index2.php?page=3">Profil</a>
             </li>
             <li>
-                <a class="boutonmenu" href="index2.php?page=4">Code</a>
+                <a class="button1" href="index2.php?page=5">Déconnexion</a>
             </li>
-            <li>
-                <a class="boutonmenu" href="index2.php?page=5">Déconnexion</a>
-            </li>
-        </ul>
+            </ul>
+    <hr class="ind2">
     </div>
 
-		<hr class="ind2">
+    <br>
+    <br>
+    <br>
 
-        <h2>PHP Quizzer</h2>
+        <h2>Fin du questionnaire</h2>
 
 		<div class="quizz">
-			<p>Félicitations ! Vous avez terminé le test</p>
+			<p>Félicitations, vous avez terminé le questionnaire !</p>
 			<br>
 			<p>Score final : <?php echo $_SESSION['score']; ?></p>
 		</div>	

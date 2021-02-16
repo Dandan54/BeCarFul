@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    require_once ("controleur/controleur.class.php");
+    //instanciation de la classe Controleur
+    $unControleur = new Controleur();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,10 +18,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-        <div class="menu">
-        <h1>BeCarFul</h1>
-
-        <ul class="menu-1-2">
+    <?php
+        if ( ! isset($_SESSION['email'])) //pas de connexion
+        {
+            echo '
+            <div class="menu">
+            <ul>
+            <li>
+                <a class="boutonmenu" href="index.php?page=0">Accueil</a>
+            </li>
+            <li>
+                <a class="boutonmenu" href="index.php?page=1">Offres</a>
+            </li>         
+            <li class="logo">
+                <p>BeCarFul</p>
+            </li>
+            <li class="afterlogo">
+                <a class="boutonmenu" href="index.php?page=2">Contact</a>
+            </li>
+            <li>
+                <a class="button1" href="index.php?page=3">Connexion</a>
+            </li>
+            </ul>
+    <hr class="ind1">
+    </div>';
+        } else {
+            echo '
+            <div class="menu">
+            <ul>
             <li>
                 <a class="boutonmenu" href="index2.php?page=0">Accueil</a>
             </li>
@@ -22,23 +53,30 @@
                 <a class="boutonmenu" href="index2.php?page=1">Offres</a>
             </li>
             <li>
+                <a class="boutonmenu" href="index2.php?page=4">Entraînement</a>
+            </li>          
+            <li class="logo">
+                <p>BeCarFul</p>
+            </li>
+            <li class="afterlogo">
                 <a class="boutonmenu" href="index2.php?page=2">Contact</a>
             </li>
-        </ul>
-        <ul class="menu-2-2">
             <li>
                 <a class="boutonmenu" href="index2.php?page=3">Profil</a>
             </li>
             <li>
-                <a class="boutonmenu" href="index2.php?page=4">Code</a>
+                <a class="button1" href="index2.php?page=5">Déconnexion</a>
             </li>
-            <li>
-                <a class="boutonmenu" href="index2.php?page=5">Déconnexion</a>
-            </li>
-        </ul>
-    </div>
-
+            </ul>
+    <hr class="ind2">
+    </div>';
+        }
+    ?>
     <hr>
+    <br>
+    <br>
+    <br>
+    
 
     <h2>Le permis à 1€ par jour, c’est quoi ?</h2>
 

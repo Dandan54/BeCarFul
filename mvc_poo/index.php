@@ -19,27 +19,27 @@
 </head>
 <body>
     <div class="menu">
-        <h1>BeCarFul</h1>
-
-        <ul class="menu-1-1">
+            <ul>
             <li>
                 <a class="boutonmenu" href="index.php?page=0">Accueil</a>
             </li>
             <li>
                 <a class="boutonmenu" href="index.php?page=1">Offres</a>
+            </li>         
+            <li class="logo">
+                <p>BeCarFul</p>
             </li>
-        </ul>
-        <ul class="menu-2-1">
-            <li>
+            <li class="afterlogo">
                 <a class="boutonmenu" href="index.php?page=2">Contact</a>
             </li>
             <li>
                 <a class="button1" href="index.php?page=3">Connexion</a>
             </li>
-        </ul>
+            </ul>
+    <hr class="ind1">
     </div>
 
-    <hr class="ind1">
+    
 
     <?php
         if ( ! isset($_SESSION['email'])) //pas de connexion

@@ -1,3 +1,6 @@
+<br>
+<br>
+<br>
 <h2>Découvrez nos offres</h2>
 
 <div class=content>
@@ -28,6 +31,9 @@
         </td>
     </table>
 
+    <input class="boutonpermis1" type=button onclick=window.location.href="permis1euro.php"; value="Informations sur le permis à 1 euro"/>
+    <br>
+
     <table class="formules">
         <td>
             <h3>Conduite accompagnée</h3>
@@ -47,7 +53,7 @@
         </td>
     </table>
 
-    <input class="boutonpermis1" type=button onclick=window.location.href="permis1euro.php"; value="Informations sur le permis à 1 euro"/>
+    <!-- <input class="boutonpermis1" type=button onclick=window.location.href="permis1euro.php"; value="Informations sur le permis à 1 euro"/> -->
 </div>
 
 
